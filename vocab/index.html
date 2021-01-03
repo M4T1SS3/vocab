@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <section class="app">
+        <div class="icons">
+            <label for="file" class="icon">
+                <img class="icon" src="icons/upload.svg">
+                <input class="file" type="file" id="file" accept=".xls, .xlsx, .csv"/><br/>
+            </label>
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="shuffle"id="shuffle-btn">
+                <input class="shuffle" type="button" >
+                <img class="icon" src="icons/shuffle.svg">
+            </label>
+        </div>
+        <div class="card" id="card">
+            <div class="front page" id="front">
+                <div class="text" id="vocab">Hey, how are you?</div>
+            </div>
+            <div class="back page" id="back">
+                <div class="text" id="translation">Do you want to learn some vocab?</div>
+            </div>
+        </div>
+        <div class="talk-with-me">
+            <input class="input" type="text" id="input" placeholder="Answer...">
+            <div class="input correction" id="solution">Korrekt: </div>
+        </div>
+        <ul class="interface">
+            <li class="" id="back-btn">
+                <img class="arrow left icon" src="icons/arrow.svg">
+            </li>
+            <span id="display-txt" class="display-txt"></span>
+            <li class="" id="draw-btn">
+                <img class="arrow icon" src="icons/arrow.svg">
+            </li>
+        </ul>
+    </section>
+</body>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+</html>
